@@ -12,7 +12,7 @@ namespace mvvm_part2
         {
             InitializeComponent();
 
-            MainPage = new RoomView();
+            MainPage = new RoomsView();
         }
 
         protected override void OnStart()

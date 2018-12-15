@@ -9,15 +9,15 @@ using Xamarin.Forms;
 
 namespace mvvm_part2.ViewModels
 {
-    public class RoomViewModel : INotifyPropertyChanged
+    public class RoomsViewModel : INotifyPropertyChanged
     {
         public ICommand CreateRoomCommand { protected set; get; }       
-        public ObservableCollection<RoomViewModel> RoomsCollection { get; set; }
+        public ObservableCollection<RoomsViewModel> RoomsCollection { get; set; }
         public Room CurrentRoom { get; private set; }      
 
-        public RoomViewModel()
+        public RoomsViewModel()
         {
-            RoomsCollection = new ObservableCollection<RoomViewModel>();
+            RoomsCollection = new ObservableCollection<RoomsViewModel>();
             CreateRoomCommand = new Command(CreateRoom);            
             CurrentRoom = new Room();   
         }
@@ -25,7 +25,7 @@ namespace mvvm_part2.ViewModels
         {
             if (romObject != null)
             {
-                RoomViewModel room = romObject as RoomViewModel;
+                RoomsViewModel room = romObject as RoomsViewModel;
                 if (room != null)
                 {
                     RoomsCollection.Add(room);

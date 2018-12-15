@@ -11,12 +11,12 @@ using Xamarin.Forms.Xaml;
 namespace mvvm_part2.Views
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class RoomView : ContentPage
+	public partial class RoomsView : ContentPage
 	{        
-        public RoomView ( )
+        public RoomsView ( )
 		{
             InitializeComponent();
-            BindingContext = new RoomViewModel();
+            BindingContext = new RoomsViewModel();
         }
 	}
 }
