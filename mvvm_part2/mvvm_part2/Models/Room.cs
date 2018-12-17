@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace mvvm_part2.Models
+﻿namespace mvvm_part2.Models
 {
     public class Room
     {

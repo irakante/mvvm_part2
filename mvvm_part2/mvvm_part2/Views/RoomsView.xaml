@@ -10,24 +10,21 @@
                 <Entry
                     FontSize="Medium"
                     Keyboard="Numeric"
-                    Text="{Binding CurrentRoom.Number}" />
+                    Text="{Binding Number}" />
                 <Label Text="FreePlace" />
 
                 <Entry
                     FontSize="Medium"
                     Keyboard="Numeric"
-                    Text="{Binding CurrentRoom.FreePlace}" />
+                    Text="{Binding FreePlace}" />
 
 
-                <Button
-                    Command="{Binding CreateRoomCommand}"
-                    CommandParameter="{Binding}"
-                    Text="Add" />
+                <Button Command="{Binding CreateRoomCommand}" Text="Add" />
 
                 <ListView
                     x:Name="roomList"
                     HasUnevenRows="True"
-                    ItemsSource="{Binding RoomsCollection}"
+                    ItemsSource="{Binding Rooms}"
                     SelectedItem="{Binding SelectedRoom, Mode=TwoWay}">
                     <ListView.ItemTemplate>
                         <DataTemplate>
